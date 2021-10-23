@@ -18,9 +18,9 @@ class SavingAccount:
             return "Successful withdrawal"
     
     @staticmethod
-    def isOneYearWithoutWithdrawal(amount):
+    def calculateOneYearWithoutWithdrawal(amount):
         return amount + (amount * 0.4)
 
     @staticmethod
-    def isOneYearWithWithdrawal(amount):
+    def calculateOneYearWithWithdrawal(amount):
         return amount + (amount * 0.02)
