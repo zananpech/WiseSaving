@@ -6,10 +6,31 @@
     <title>Wise Saving Account</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src='main.js'></script>
 </head>
-<body>
-    <h1>Home Page</h1>
-    <p>{{content}}</p>
+<body class="body">
+    <!-- navigation bar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light" style="background-color: #37517e;">
+      <div class="container-fluid">
+        <img src="assets/flag.png">
+        <button id="register" class="btn btn-outline-primary" type="submit" style="position: float-right;">Register</button>
+      </div>
+    </nav>
+
+    <!-- deposit -->
+    <form class="row g-3" action="/deposit" style="margin-left: 1em;" method="POST">
+        <div class="col-auto">
+          <label for="inputPassword2" class="visually-hidden">Deposit</label>
+          <input name="deposit" class="form-control" placeholder="Amount">
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary mb-3">Deposit</button>
+        </div>
+      </form>
+
+      <!-- result -->
+     
+
 </body>
-</html>

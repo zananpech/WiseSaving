@@ -1,4 +1,3 @@
-from _typeshed import Self
 
 
 class SavingAccount:
@@ -17,15 +16,11 @@ class SavingAccount:
         else:            
             self.current_amount -= amount
             return "Successful withdrawal"
-     
-    def isOneYearWithoutWithdrawal(self):
-        #TODO
-        #we want to check if user keeps their money for one year without withdrawal, 
-        #if this is true, amount in the account will multiple 4% of interest after one year.
-        return
+    
+    @staticmethod
+    def isOneYearWithoutWithdrawal(amount):
+        return amount + (amount * 0.4)
 
-    def isOneYearWithWithdrawal(self):
-        #TODO
-        # if user cannot keep for one year, they make transfer or withdraw, then user lose 4% interest after
-        # that interest for them is 0.20%
-        return 
+    @staticmethod
+    def isOneYearWithWithdrawal(amount):
+        return amount + (amount * 0.02)
